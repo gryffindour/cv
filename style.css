@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 10px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    max-width: 800px;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.leftside {
+    background: #5a514e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.leftside .nama img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 0px solid #fff;
+    margin-bottom: 10px;
+}
+
+.leftside .nama h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    text-transform: uppercase;
+}
+
+.leftside .nama p {
+    font-size: 0.9em;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.leftside .contact-info h3,
+.leftside .profile h3 {
+    font-size: 1.2em;
+    margin: 20px 0;
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 5px;
+}
+
+.leftside .contact-info ul,
+.leftside .profile p {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+.rightside {
+    padding: 20px;
+    color: #333;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.rightside section {
+    margin-bottom: 20px;
+}
+
+.rightside ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.rightside ul.details {
+    margin-top: 8px;
+    padding-left: 20px;
+    list-style-type: disc;
+    color: #555;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background: #928680;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #fff;
+}
+
+.skill-item i {
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
+/* Responsive Design */
+@media (min-width: 769px) {
+    .container {
+        grid-template-columns: 45% 55%;
+    }
+
+    .leftside {
+        text-align: center;
+    }
+
+    .leftside .contact-info ul li {
+        justify-content: flex-start;
+    }
+}
